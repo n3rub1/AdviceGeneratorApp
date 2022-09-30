@@ -15,9 +15,19 @@ body {
 .top-div {
     color: hsl(193, 38%, 86%);
     max-width: 35%;
+    min-width: 250px;
     margin: 0 auto;
     text-align: center;
-    padding:2em;
+    padding: 2em;
+}
+
+.patternImage-mobile {
+    display: none;
+}
+
+.patternImage {
+    display: block;
+    width: 100%;
 }
 
 h1 {
@@ -25,8 +35,8 @@ h1 {
     font-size: 0.5em;
 }
 
-p{
-    padding:0.5em;
+p {
+    padding: 0.5em;
 }
 
 .text-div {
@@ -38,26 +48,60 @@ p{
 .img-div {
     display: flex;
     position: relative;
-    top:-25px;
-    width:60px;
-    height:60px;
+    top: -25px;
+    width: 60px;
+    height: 60px;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
-    left:calc(50% - 30px);
+    left: calc(50% - 30px);
     justify-content: center;
     align-items: center;
 }
 
 .diceImage {
-    height:23px;
+    height: 23px;
     cursor: pointer;
 }
 
-.patternImage{
-    min-height:25px;
-    width:100%
+.img-div:hover {
+    box-shadow: 0px 0px 15px 5px hsl(145, 100%, 50%);
 }
 
-.img-div:hover{
-    box-shadow: 0px 0px 15px 5px hsl(145, 100%, 50%);
+@media only screen and (max-width: 800px) {
+
+    *{
+        font-size: 16px;
+    }
+
+    .patternImage {
+        display: none;
+    }
+
+    .patternImage-mobile {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .img-div:hover {
+        box-shadow: 0px 0px 15px 5px hsla(0, 100%, 100%, 0);
+    }
+
+    .img-div {
+        display: flex;
+        position: relative;
+        top: -25px;
+        width: 40px;
+        height: 40px;
+        background-color: hsl(150, 100%, 66%);
+        border-radius: 50%;
+        left: calc(50% - 20px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .diceImage {
+        height: 16px;
+        cursor: pointer;
+    }
 }
