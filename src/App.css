@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Manrope:wght@800&display=swap');
+
+* {
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+body {
+
+    margin: 0;
+    background: hsl(217, 19%, 24%);
+}
+
+.top-div {
+    color: hsl(193, 38%, 86%);
+    max-width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    padding:2em;
+}
+
+h1 {
+    color: hsl(150, 100%, 66%);
+    font-size: 0.5em;
+}
+
+p{
+    padding:0.5em;
+}
+
+.text-div {
+    background: hsl(219, 17%, 29%);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.img-div {
+    display: flex;
+    position: relative;
+    top:-25px;
+    width:60px;
+    height:60px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    left:calc(50% - 30px);
+    justify-content: center;
+    align-items: center;
+}
+
+.diceImage {
+    height:23px;
+    cursor: pointer;
+}
+
+.patternImage{
+    min-height:25px;
+    width:100%
+}
+
+.img-div:hover{
+    box-shadow: 0px 0px 15px 5px hsl(145, 100%, 50%);
+}
